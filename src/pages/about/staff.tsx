@@ -11,6 +11,7 @@ const AboutStaffPage: NextPage = () => {
         <div>
             <p>About - StaffPage</p>
             <p><Link href='../about'>Back To AboutTopPage</Link></p>
+            <p><Link href='../about/service'>Link To AboutServicePage</Link></p>
             <p><Link href='/'>Back To Home</Link></p>
         </div>
     );
