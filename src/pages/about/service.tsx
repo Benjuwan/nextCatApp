@@ -1,20 +1,20 @@
 /* クライアントコンポーネントの指定 */
 "use client";
 
-/* NextPage はページコンポーネントを表す型 */
 import { NextPage } from "next";
 import Link from 'next/link';
 
 /* export default の記述方法でないと機能しない */
-const AboutPage: NextPage = () => {
+
+const AboutServicePage: NextPage = () => {
     return (
         <div>
-            <p>About TopPage</p>
+            <p>About - ServicePage</p>
+            <p><Link href='../about'>Back To AboutTopPage</Link></p>
+            <p><Link href='../about/staff'>Link To AboutStaffPage</Link></p>
             <p><Link href='/'>Back To Home</Link></p>
-            <p><Link href='/about/staff'>Link To StaffPage</Link></p>
-            <p><Link href='/about/service'>Link To ServicePage</Link></p>
         </div>
     );
 };
 
-export default AboutPage; 
+export default AboutServicePage;
