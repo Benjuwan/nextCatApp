@@ -18,7 +18,7 @@ type Props = {
 
 // サーバーサイドで実行する処理
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
-    const {fetchImage} = useFetchImage();
+    const { fetchImage } = useFetchImage();
     const image = await fetchImage("https://api.thecatapi.com/v1/images/search");
     return {
         props: {
@@ -94,6 +94,8 @@ const ElsWrapper = styled.div`
         & p {
             text-align: center;
             line-height: 2;
+            color: #3e3e3e;
+            font-size: 24px;
         }
     }
 
